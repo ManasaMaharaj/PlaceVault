@@ -1,0 +1,18 @@
+const mongoose = require('mongoose');
+
+const placementSchema = new mongoose.Schema({
+  type: { type: String, enum: ['fulltime', 'internship'], default: 'fulltime' },
+  company: String,
+  role: String,
+  ctc: Number,
+  stipend: Number,
+  duration: String,
+  ppo: { type: Boolean, default: false },
+  cgpa: Number,
+  branch: String,
+  year: Number,
+  skills: [String],
+  approved: { type: Boolean, default: false }
+}, { timestamps: true });
+
+module.exports = mongoose.model('Placement', placementSchema);
