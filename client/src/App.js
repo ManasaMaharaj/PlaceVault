@@ -1,9 +1,10 @@
-const API = "https://placevault.onrender.com";
-const ADMIN_EMAIL = "maharajmanasa@gmail.com";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { auth, provider, signInWithPopup, signOut } from './firebase';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+
+const API = 'https://placevault.onrender.com';
+const ADMIN_EMAIL = 'maharajmanasa@gmail.com';
 
 function App() {
   const [user, setUser] = useState(null);
