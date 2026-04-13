@@ -3,7 +3,9 @@ import axios from 'axios';
 import { auth, provider, signInWithPopup, signOut } from './firebase';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
+// eslint-disable-next-line
 const API = 'https://placevault.onrender.com';
+// eslint-disable-next-line
 const ADMIN_EMAIL = 'maharajmanasa@gmail.com';
 
 function App() {
