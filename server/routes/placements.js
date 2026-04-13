@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Placement = require('../models/Placement');
+const Placement = require('../models/placement');
 
 // Submit a placement
 router.post('/', async (req, res) => {
