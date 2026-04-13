@@ -1,3 +1,5 @@
+const API = "https://placevault.onrender.com";
+const ADMIN_EMAIL = "maharajmanasa@gmail.com";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { auth, provider, signInWithPopup, signOut } from './firebase';
